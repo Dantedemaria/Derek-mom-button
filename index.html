@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Derek's Mom</title>
+  <style>
+    /* CSS styles for the button */
+    #mom-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Derek's Mom Website</h1>
+  <p>Click the button below to see Derek's mom!</p>
+  <button id="mom-button" onclick="moveButton()">Click here to see Derek's mom ;)</button>
+  <script>
+    // JavaScript function to move the button when clicked
+    function moveButton() {
+      // Generate random positions for the button
+      var x = Math.floor(Math.random() * window.innerWidth);
+      var y = Math.floor(Math.random() * window.innerHeight);
+      // Update the button position
+      document.getElementById("mom-button").style.right = x + "px";
+      document.getElementById("mom-button").style.top = y + "px";
+    }
+  </script>
+</body>
+</html>
